@@ -1,7 +1,7 @@
 package club.kid7;
 
 public class Triangle {
-    private double a;
+    private final double a;
     private final double b;
     private final double c;
 
