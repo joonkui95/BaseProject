@@ -13,6 +13,6 @@ public class Triangle {
 
     public String getType() {
         //TODO
-        return "";
+        return "正三角形";
     }
 }
