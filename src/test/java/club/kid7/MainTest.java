@@ -3,9 +3,9 @@ package club.kid7;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class TestMain {
+public class MainTest {
     @Test
-    public void testAdd() {
+    public void add() throws Exception {
         // Arrange
         Main main = new Main();
         int x = 2;
