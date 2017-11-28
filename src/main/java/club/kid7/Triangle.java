@@ -1,18 +1,25 @@
 package club.kid7;
 
+import java.util.Arrays;
+
 public class Triangle {
-    private final double a;
-    private final double b;
-    private final double c;
+    private final double[] e;
 
     public Triangle(double a, double b, double c) {
-        this.a = a;
-        this.b = b;
-        this.c = c;
+        this.e = new double[]{a, b, c};
+        Arrays.sort(this.e);
     }
 
     public String getType() {
-        //TODO
-        return "正三角形";
+        if (e[0] + e[1] <= e[2]) {
+            return "不是三角形";
+        }
+        if (e[0] * e[0] + e[1] * e[1] < e[2] + e[2]) {
+            return "銳角三角形";
+        }
+        if (e[0] * e[0] + e[1] * e[1] == e[2] + e[2]) {
+            return "直角三角形";
+        }
+        return "鈍角三角形";
     }
 }
